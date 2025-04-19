@@ -1,7 +1,13 @@
 function sayHello() {
-  console.log("Hello, World!");
-}   
+  const greetingElement = document.getElementById("message");
+  greetingElement.textContent = "Hello World!";
+}
+
+
 
 function showName() {
-  console.log("My name is Ellene Broome.");
+  const inputElement = document.getElementById("nameInput");
+  const name = inputElement.value;
+  const output = document.getElementById("output");
+  output.textContent = `Hello, ${name}!`;
 }
